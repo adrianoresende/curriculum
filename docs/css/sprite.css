@@ -1,0 +1,17 @@
+.adriano { width: 304px; height: 110px; background: url("../imgs/sprite.png") -5px -5px no-repeat; }
+.desativado_btn:hover div.icon-dribble { width: 178px; height: 32px; background: url("../imgs/sprite.png") -5px -125px no-repeat; }
+.icon-dribble { width: 178px; height: 32px; background: url("../imgs/sprite.png") -5px -167px no-repeat; }
+.logo-unibh { width: 156px; height: 47px; background: url("../imgs/sprite.png") -5px -209px no-repeat; }
+.logo-unibh:hover { width: 156px; height: 47px; background: url("../imgs/sprite.png") -319px -5px no-repeat; }
+.icon-behance { width: 155px; height: 30px; background: url("../imgs/sprite.png") -319px -62px no-repeat; }
+.btn:hover div.icon-behance { width: 155px; height: 30px; background: url("../imgs/sprite.png") -319px -102px no-repeat; }
+.logo-fumec { width: 89px; height: 89px; background: url("../imgs/sprite.png") -319px -142px no-repeat; }
+.logo-fumec:hover { width: 89px; height: 89px; background: url("../imgs/sprite.png") -5px -266px no-repeat; }
+.logo-cotemig { width: 89px; height: 54px; background: url("../imgs/sprite.png") -104px -266px no-repeat; }
+.logo-cotemig:hover { width: 89px; height: 54px; background: url("../imgs/sprite.png") -203px -266px no-repeat; }
+.icon-nanquim { width: 40px; height: 40px; background: url("../imgs/sprite.png") -418px -142px no-repeat; }
+.icon-sublime { width: 40px; height: 40px; background: url("../imgs/sprite.png") -171px -209px no-repeat; }
+.icon-terminal { width: 40px; height: 37px; background: url("../imgs/sprite.png") -418px -192px no-repeat; }
+.icon-javascript { width: 40px; height: 36px; background: url("../imgs/sprite.png") -221px -209px no-repeat; }
+.icon-mind { width: 35px; height: 35px; background: url("../imgs/sprite.png") -271px -209px no-repeat; }
+.icon-vector { width: 33px; height: 30px; background: url("../imgs/sprite.png") -193px -125px no-repeat; }
