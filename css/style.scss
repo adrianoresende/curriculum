@@ -1,39 +1,22 @@
-// Font Stellar
-@font-face {
-    font-family: 'Stellar';
-    src: url('../fonts/stellar-light.eot');
-    src: url('../fonts/stellar-light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/stellar-light.woff2') format('woff2'),
-        url('../fonts/stellar-light.woff') format('woff'),
-        url('../fonts/stellar-light.ttf')  format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Stellar';
-    src: url('../fonts/stellar-medium.eot');
-    src: url('../fonts/stellar-medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/stellar-medium.woff2') format('woff2'),
-        url('../fonts/stellar-medium.woff') format('woff'),
-        url('../fonts/stellar-medium.ttf')  format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-// Effect Mask 2
+@import "linearicons";
+@import "fonts";
 @import "mask";
 
-$color4: #0C2233; // Não modificar
-
-// Theme
 $color0: #6D49EA;
 $color1: #FF9800;
 $color2: #4b6cb7;
 $color3: #065471;
+$color4: #0C2233;
+
+body {
+    overflow-x: hidden;
+    color: $color4;
+    background: url('../imgs/bg.png');
+}
+
+.btn {
+  border: 0;
+}
 
 .bg-gradient {
   background: -webkit-linear-gradient(90deg, #4776E6, #8E54E9); /* Chrome 10+, Saf5.1+ */
@@ -67,18 +50,16 @@ $color3: #065471;
     font-size: 34px;
     font-weight: 200;
     margin: 0 auto;
-    padding: 0 30px 20px 30px;
+    padding: 0 140px 20px;
     text-align: center;
     line-height: 46px;
     strong {
         color: $color1;
         font-weight: 200;
     }
-}
-
-body {
-    color: $color4;
-    background: url('../imgs/bg.png');
+    p {
+        margin-bottom: 24px;
+    }
 }
 
 .header-bg {
@@ -105,9 +86,9 @@ h1 {
     text-align: center;
 }
 .my-photo {
-    margin: -67px auto 0 auto;
+    border-radius: 50%;
+    margin: -80px auto 0 auto;
     display: block;
-    width: 130px;
 }
 #name {
     text-align: center;
@@ -183,12 +164,15 @@ h1 {
     font-size: 34px;
     font-weight: 200;
     margin: 0 auto;
-    padding: 0 30px 20px 30px;
+    padding: 0 120px 20px;
     text-align: center;
     line-height: 46px;
     strong {
         color: $color2;
         font-weight: 200;
+    }
+    p {
+        margin-bottom: 24px;
     }
 }
 .box {
@@ -218,7 +202,7 @@ $break1-bg: lighten(#182848,10);
         -ms-transform: skew(0deg, -6deg);
         -o-transform: skew(0deg, -6deg);
         transform: skew(0deg, -6deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     &:after {
         content: '';
@@ -234,7 +218,7 @@ $break1-bg: lighten(#182848,10);
         -ms-transform: skew(0deg, -6deg);
         -o-transform: skew(0deg, -6deg);
         transform: skew(0deg, -6deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 .line-out-right-1 {
@@ -252,7 +236,7 @@ $break1-bg: lighten(#182848,10);
         -ms-transform: skew(0deg, -6deg);
         -o-transform: skew(0deg, -6deg);
         transform: skew(0deg, -6deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     &:after {
         content: '';
@@ -268,7 +252,7 @@ $break1-bg: lighten(#182848,10);
         -ms-transform: skew(0deg, -6deg);
         -o-transform: skew(0deg, -6deg);
         transform: skew(0deg, -6deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 .break-1 {
@@ -288,8 +272,8 @@ $break1-bg: lighten(#182848,10);
             left: 0;
         }
     }
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 140px;
     background: $break1-bg;
     color: #fff;
     padding-top: 10px;
@@ -326,7 +310,7 @@ $break1-bg: lighten(#182848,10);
         -ms-transform: skew(0deg, $break1-deg);
         -o-transform: skew(0deg, $break1-deg);
         transform: skew(0deg, $break1-deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 h5.title {
@@ -378,7 +362,7 @@ $bg-tools: #e8e8e8;
         -o-transform: skew(0deg, 3deg);
         transform: skew(0deg, 3deg);
         opacity: 0.85;
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     &:after {
         content: '';
@@ -394,7 +378,7 @@ $bg-tools: #e8e8e8;
         -ms-transform: skew(0deg, 3deg);
         -o-transform: skew(0deg, 3deg);
         transform: skew(0deg, 3deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 .line-out-right-4 {
@@ -413,7 +397,7 @@ $bg-tools: #e8e8e8;
         -o-transform: skew(0deg, 3deg);
         transform: skew(0deg, 3deg);
         opacity: 0.85;
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     &:after {
         content: '';
@@ -429,7 +413,7 @@ $bg-tools: #e8e8e8;
         -ms-transform: skew(0deg, 3deg);
         -o-transform: skew(0deg, 3deg);
         transform: skew(0deg, 3deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 .tools {
@@ -489,7 +473,7 @@ $break2-bg: $color1;
         -ms-transform: skew(0deg, 3deg);
         -o-transform: skew(0deg, 3deg);
         transform: skew(0deg, 3deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     &:after {
         content: '';
@@ -505,7 +489,7 @@ $break2-bg: $color1;
         -ms-transform: skew(0deg, 3deg);
         -o-transform: skew(0deg, 3deg);
         transform: skew(0deg, 3deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 .line-out-right-2 {
@@ -523,7 +507,7 @@ $break2-bg: $color1;
         -ms-transform: skew(0deg, 3deg);
         -o-transform: skew(0deg, 3deg);
         transform: skew(0deg, 3deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     &:after {
         content: '';
@@ -539,7 +523,7 @@ $break2-bg: $color1;
         -ms-transform: skew(0deg, 3deg);
         -o-transform: skew(0deg, 3deg);
         transform: skew(0deg, 3deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 .break-2 {
@@ -565,7 +549,7 @@ $break2-bg: $color1;
         -ms-transform: skew(0deg, $break2-deg);
         -o-transform: skew(0deg, $break2-deg);
         transform: skew(0deg, $break2-deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     &:after {
         content: "";
@@ -581,7 +565,7 @@ $break2-bg: $color1;
         -ms-transform: skew(0deg, $break2-deg);
         -o-transform: skew(0deg, $break2-deg);
         transform: skew(0deg, $break2-deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 // Objetive
@@ -597,7 +581,7 @@ $break2-bg: $color1;
     position: relative;
     &:before {
         top: 85px;
-        bottom: 150px;
+        bottom: 130px;
         position: absolute;
         content: " ";
         width: 4px;
@@ -978,7 +962,7 @@ $break2-bg: $color1;
         -o-transform: skew(0deg, -6deg);
         transform: skew(0deg, -6deg);
         opacity: 0.85;
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     &:after {
         content: '';
@@ -994,7 +978,7 @@ $break2-bg: $color1;
         -ms-transform: skew(0deg, -6deg);
         -o-transform: skew(0deg, -6deg);
         transform: skew(0deg, -6deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 .line-out-right-3 {
@@ -1013,7 +997,7 @@ $break2-bg: $color1;
         -o-transform: skew(0deg, -6deg);
         transform: skew(0deg, -6deg);
         opacity: 0.85;
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     &:after {
         content: '';
@@ -1029,7 +1013,7 @@ $break2-bg: $color1;
         -ms-transform: skew(0deg, -6deg);
         -o-transform: skew(0deg, -6deg);
         transform: skew(0deg, -6deg);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 .break-1.now {
