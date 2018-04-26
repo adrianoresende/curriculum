@@ -63,7 +63,6 @@ body {
 }
 
 .header-bg {
-    // @extend .bg-gradient3;
     background: url('../imgs/bg-header.jpg') top center #4a6ab3;
     width: 100%;
     padding: 60px 0 190px;
@@ -581,7 +580,7 @@ $break2-bg: $color1;
     position: relative;
     &:before {
         top: 85px;
-        bottom: 130px;
+        bottom: 140px;
         position: absolute;
         content: " ";
         width: 4px;
@@ -752,43 +751,6 @@ $break2-bg: $color1;
     font-size: 16px;
     p {
         margin: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .timeline {
-        &:before {
-            left: 40px;
-            bottom: 235px;
-        }
-        > li > {
-            .timeline-badge {
-                left: 15px;
-                margin-left: 0;
-                top: 16px;
-                &.point {
-                    margin-left: 16px;
-                }
-            }
-            .timeline-panel {
-                width: calc(100% - 90px);
-                width: -moz-calc(100% - 90px);
-                width: -webkit-calc(100% - 90px);
-                float: right;
-                &:before {
-                    border-left-width: 0;
-                    border-right-width: 15px;
-                    left: -15px;
-                    right: auto;
-                }
-                &:after {
-                    border-left-width: 0;
-                    border-right-width: 14px;
-                    left: -14px;
-                    right: auto;
-                }
-            }
-        }
     }
 }
 // End-timeline
@@ -1077,8 +1039,8 @@ $break2-bg: $color1;
 
 // Footer
 .footer {
-    margin-top: -105px;
-    padding-top:120px;
+    margin-top: -75px;
+    padding-top: 120px;
     padding-bottom: 50px;
     text-align: center;
     .title {
@@ -1105,13 +1067,20 @@ $break2-bg: $color1;
 // End Footer
 
 // Responsive Design
+// Descktop Large
+@media (min-width: 1200px) {
+    .timeline {
+        &:before {
+            bottom: 130px;
+        }
+    }
+}
 // Tablet
 @media (min-width: 768px) and (max-width: 991px) {
 
-    // Timeline
     .timeline {
         &:before {
-            bottom: 190px;
+            bottom: 170px;
         }
         &.photoshop {
             &:before {
@@ -1133,7 +1102,7 @@ $break2-bg: $color1;
 @media (max-width: 767px) {
 
     .header-bg {
-        padding-bottom: 70px;
+        padding-bottom: 110px;
     }
     .paper {
         margin-top:0;
@@ -1144,6 +1113,14 @@ $break2-bg: $color1;
     }
     h5.title {
         text-align: center;
+    }
+    .break-1 {
+        margin-bottom: 80px;
+    }
+    .text-big {
+        font-size: 28px;
+        line-height: 150%;
+        padding: 0 12px 20px;
     }
 
     // Perfil
@@ -1161,19 +1138,17 @@ $break2-bg: $color1;
     }
     .iam {
         font-size: 28px;
-        padding: 0 5px 20px;
-        line-height: 38px;
-        font-family: Helvetica;
+        padding: 0 12px 20px;
+        line-height: 150%;
         .visible-xs {
             display: inline-block;
         }
     }
-
-    // Timeline
     .timeline {
         margin-top: 10px;
         &:before {
-            bottom: 30px;
+            left: 30px;
+            bottom: 200px;
         }
         > li {
             margin-top: 80px;
@@ -1184,6 +1159,34 @@ $break2-bg: $color1;
                 left: 10px;
                 top: -33px;
                 font-size: 32px;
+            }
+        }
+        > li > {
+            .timeline-badge {
+                left: 5px;
+                margin-left: 0;
+                top: 16px;
+                &.point {
+                    margin-left: 16px;
+                }
+            }
+            .timeline-panel {
+                width: calc(100% - 80px);
+                width: -moz-calc(100% - 80px);
+                width: -webkit-calc(100% - 80px);
+                float: right;
+                &:before {
+                    border-left-width: 0;
+                    border-right-width: 15px;
+                    left: -15px;
+                    right: auto;
+                }
+                &:after {
+                    border-left-width: 0;
+                    border-right-width: 14px;
+                    left: -14px;
+                    right: auto;
+                }
             }
         }
     }
@@ -1247,23 +1250,11 @@ $break2-bg: $color1;
         }
     }
 
-    // Portfolio
-    .portfolios {
-        .portfolio {
-            width: 80%;
-            text-align: center;
-            padding: 20px 37px 9px;
-            .lnr {
-                display: inline-block;
-            }
-        }
-    }
-
     // Now
-    .now {
+    .break-1.now, .portfolios {
         .btn {
-            display: block;
-            margin: 0 20px;
+            text-align: center;
+            padding: 11px 15px 9px;
             white-space: none;
         }
     }
